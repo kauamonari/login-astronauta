@@ -1,7 +1,7 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #242424;
+body{
+  margin: 0;
+  padding: 0;
+  background: #242424;
 }
 
 
@@ -9,13 +9,17 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   justify-content: center;
   align-items: center;
 }
 
 .left-login{
   margin-right: 80px;
+}
+
+.left-login img{
+  height: 400px;
 }
 
 .right-login{
@@ -93,4 +97,73 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
  font-size: 15px;
+}
+
+
+@media (max-width: 800px){
+  .left-login{
+    margin-right: 20px;
+  }
+  
+  .left-login img{
+    height: 200px;
+  }
+  .right-login{
+  
+    padding: 20px 2px 20px 20px;
+    margin: 0px;
+    margin-right: 10px;
+  }
+
+  .titulo{
+    font-size: 10px;
+
+  }
+  .number{
+    width: 100px;
+    margin: 0px 0px 10px 0px;
+    padding: 5px;
+    border: 1px solid;
+    border-color: #000000;
+    font-size: 10px;
+  }
+
+  .next{
+    width: 112px;
+    font-size: 10px ;
+  }
+
+  .p{
+    font-size:8px;
+    align-self: self-start;
+    margin-left: 40px;
+
+  }
+
+  .sign{
+    width: 112px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    .desc, .final{
+      font-size: 8px;
+      margin-bottom: 10px;
+    align-self: self-start;
+    }
+
+    .desc{
+      text-align: start;
+    }
+}
+
+
+@media (min-width: 800px) {
+  .sign{
+    width: 120px;
+    font-size: 15px;
+    margin-left: 13px;  }
+  
 }
